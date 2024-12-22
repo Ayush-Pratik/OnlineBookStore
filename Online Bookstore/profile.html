@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #da9494;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    background-color: #f4a261;
+    border-radius: 4px;
+}
+
+/* Profile Section */
+.profile {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #e6bbbb;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-info h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #3d3434;
+}
+
+.profile-info p {
+    font-size: 1.1rem;
+    color: #3d3333;
+}
+
+/* Reviews Section */
+.my-reviews {
+    margin-top: 40px;
+}
+
+.my-reviews h3 {
+    font-size: 2rem;
+    color: #333;
+    border-bottom: 2px solid #f4a261;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Individual Review styling */
+.review {
+    background-color: #f3e6e6;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.review h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.review p strong {
+    color: #333;
+}
+
+/* Rating star styling */
+.review p strong:before {
+    content: "★";
+    color: #f4a261;
+    margin-right: 5px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .profile {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .profile-info p {
+        font-size: 1rem;
+    }
+
+    .review h4 {
+        font-size: 1.3rem;
+    }
+
+    .review p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .profile-info h3 {
+        font-size: 1.8rem;
+    }
+
+    .my-reviews h3 {
+        font-size: 1.8rem;
+    }
+
+    .review h4 {
+        font-size: 1.2rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="profile">
+        <h2>Your Profile</h2>
+
+        <!-- Profile Information -->
+        <div class="profile-info">
+            <h3>Welcome, John</h3>
+            <p>Email: johndoe@example.com</p>
+            <p>Member Since: January 2024</p>
+        </div>
+
+        <!-- My Reviews Section -->
+        <div class="my-reviews">
+            <h3>My Reviews</h3>
+            
+            <!-- Review 1: 1984 -->
+            <div class="review">
+                <h4>1984 by George Orwell</h4>
+                <p><strong>Rating:</strong> ★★★★☆</p>
+                <p><strong>Review:</strong> "An unforgettable dystopian masterpiece. The themes of surveillance and individual freedom are as relevant today as ever."</p>
+                <p><strong>Reviewed on:</strong> December 15, 2024</p>
+            </div>
+
+            <!-- Review 2: To Kill a Mockingbird -->
+            <div class="review">
+                <h4>To Kill a Mockingbird by Harper Lee</h4>
+                <p><strong>Rating:</strong> ★★★★★</p>
+                <p><strong>Review:</strong> "A touching and powerful novel about race and justice. The characters and their struggles are beautifully depicted."</p>
+                <p><strong>Reviewed on:</strong> December 20, 2024</p>
+            </div>
+
+            <!-- Review 3: The Great Gatsby -->
+            <div class="review">
+                <h4>The Great Gatsby by F. Scott Fitzgerald</h4>
+                <p><strong>Rating:</strong> ★★★☆☆</p>
+                <p><strong>Review:</strong> "A story of wealth, love, and tragedy. While it’s an interesting portrayal of the Jazz Age, I found the characters hard to relate to."</p>
+                <p><strong>Reviewed on:</strong> December 18, 2024</p>
+            </div>
+
+            <!-- Review 4: Moby Dick -->
+            <div class="review">
+                <h4>Moby Dick by Herman Melville</h4>
+                <p><strong>Rating:</strong> ★★★☆☆</p>
+                <p><strong>Review:</strong> "A long and complex narrative, full of philosophical musings. While impressive in scope, the pacing sometimes felt slow."</p>
+                <p><strong>Reviewed on:</strong> December 10, 2024</p>
+            </div>
+
+            <!-- Review 5: The Catcher in the Rye -->
+            <div class="review">
+                <h4>The Catcher in the Rye by J.D. Salinger</h4>
+                <p><strong>Rating:</strong> ★★★★★</p>
+                <p><strong>Review:</strong> "A raw and honest exploration of teenage angst and rebellion. Holden's voice is unique and compelling."</p>
+                <p><strong>Reviewed on:</strong> December 5, 2024</p>
+            </div>
+
+            <!-- Review 6: Pride and Prejudice -->
+            <div class="review">
+                <h4>Pride and Prejudice by Jane Austen</h4>
+                <p><strong>Rating:</strong> ★★★★★</p>
+                <p><strong>Review:</strong> "A timeless romantic classic with witty characters and social commentary. Elizabeth Bennet and Mr. Darcy’s chemistry is unmatched."</p>
+                <p><strong>Reviewed on:</strong> December 2, 2024</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2024 Book Review Website</p>z
+    </footer>
+</body>
+</html>

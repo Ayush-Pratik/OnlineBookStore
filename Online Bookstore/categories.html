@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #da9494;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #444;
+}
+
+/* Categories Section Styling */
+.categories {
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Category Box Styling */
+.category {
+    background-color: #e6c8d8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Category Title */
+.category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Category List Styling */
+.category ul {
+    list-style: none;
+    text-align: left;
+}
+
+.category ul li {
+    margin-bottom: 10px;
+}
+
+.category ul li a {
+    text-decoration: none;
+    color: #5a0509;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.category ul li a:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category {
+        width: 100%;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 1.1rem;
+        padding: 8px 12px;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="categories">
+        <h2>Book Categories</h2>
+        <div class="category-list">
+            <!-- Category 1: Fiction -->
+            <div class="category">
+                <h3>Fiction</h3>
+                <ul>
+                    <li><a href="book-detail.html">1984</a></li>
+                    <li><a href="book-detail.html">To Kill a Mockingbird</a></li>
+                    <li><a href="book-detail.html">The Great Gatsby</a></li>
+                    <li><a href="book-detail.html">The Catcher in the Rye</a></li>
+                    <li><a href="book-detail.html">Pride and Prejudice</a></li>
+                </ul>
+            </div>
+
+            <!-- Category 2: Classics -->
+            <div class="category">
+                <h3>Classics</h3>
+                <ul>
+                    <li><a href="book-detail.html">1984</a></li>
+                    <li><a href="book-detail.html">Moby Dick</a></li>
+                    <li><a href="book-detail.html">The Great Gatsby</a></li>
+                    <li><a href="book-detail.html">Pride and Prejudice</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Book Review Website</p>
+    </footer>
+</body>
+</html>

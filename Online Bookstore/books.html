@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - Book Store</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+        /* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #da9494;
+    color: #333;
+}
+
+/* Header and navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    background-color: #f4a261;
+    border-radius: 4px;
+}
+
+/* Main content container */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Section title and intro */
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4d4545;
+    margin-bottom: 40px;
+}
+
+/* Book list styling */
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0;
+}
+
+.book-card {
+    background-color: #cbc8c8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.book-card:hover img {
+    opacity: 0.85;
+}
+
+/* Book card content */
+.book-card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.book-card-content h4 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.book-card-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .book-list {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .book-list {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+    </style>
+</head>
+<body class="books-page">
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Explore Our Book Collection</h2>
+        <p class="intro">Browse through our collection of amazing books. Find your next favorite read and share your thoughts with others.</p>
+        
+        <div class="book-list">
+            <!-- New Book 1 -->
+            <div class="book-card">
+                <img src="https://covers.openlibrary.org/b/id/8174929-L.jpg" alt="The Alchemist">
+                <div class="book-card-content">
+                    <h4>The Alchemist</h4>
+                    <p>Genre: Fiction</p>
+                </div>
+            </div>
+
+            <!-- New Book 2 -->
+            <div class="book-card">
+                <img src="https://covers.openlibrary.org/b/id/10086816-L.jpg" alt="The Silent Patient">
+                <div class="book-card-content">
+                    <h4>The Silent Patient</h4>
+                    <p>Genre: Thriller</p>
+                </div>
+            </div>
+
+            <!-- New Book 3 -->
+            <div class="book-card">
+                <img src="https://covers.openlibrary.org/b/id/7990843-L.jpg" alt="Educated">
+                <div class="book-card-content">
+                    <h4>Educated</h4>
+                    <p>Genre: Memoir</p>
+                </div>
+            </div>
+
+            <!-- New Book 4 -->
+            <div class="book-card">
+                <img src="https://covers.openlibrary.org/b/id/9922992-L.jpg" alt="The Power of Habit">
+                <div class="book-card-content">
+                    <h4>The Power of Habit</h4>
+                    <p>Genre: Self-Help</p>
+                </div>
+            </div>
+
+            <!-- New Book 5 -->
+            <div class="book-card">
+                <img src="https://covers.openlibrary.org/b/id/8034407-L.jpg" alt="Where the Crawdads Sing">
+                <div class="book-card-content">
+                    <h4>Where the Crawdads Sing</h4>
+                    <p>Genre: Fiction</p>
+                </div>
+            </div>
+
+            <!-- New Book 6 -->
+            <div class="book-card">
+                <img src="https://covers.openlibrary.org/b/id/10193998-L.jpg" alt="Atomic Habits">
+                <div class="book-card-content">
+                    <h4>Atomic Habits</h4>
+                    <p>Genre: Self-Help</p>
+                </div>
+            </div>
+
+            <!-- New Book 7 -->
+            <div class="book-card">
+                <img src="https://covers.openlibrary.org/b/id/7876840-L.jpg" alt="The Book Thief">
+                <div class="book-card-content">
+                    <h4>The Book Thief</h4>
+                    <p>Genre: Historical Fiction</p>
+                </div>
+            </div>
+
+            <!-- New Book 8 -->
+            <div class="book-card">
+                <img src="https://covers.openlibrary.org/b/id/9087246-L.jpg" alt="The Night Circus">
+                <div class="book-card-content">
+                    <h4>The Night Circus</h4>
+                    <p>Genre: Fantasy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Book Review Website</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1984 - Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #8e4343;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    background-color: #f4a261;
+    border-radius: 4px;
+}
+
+/* Book Detail Section */
+.book-detail {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #eda0a0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    color: #333;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Book Image Styling */
+.book-detail img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Review Section */
+.review {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.review p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.review p strong {
+    color: #333;
+}
+
+/* Write a Review Form */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+textarea {
+    padding: 12px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    resize: vertical;
+}
+
+textarea:focus {
+    border-color: #f4a261;
+}
+
+select {
+    padding: 12px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    outline: none;
+}
+
+select:focus {
+    border-color: #f4a261;
+}
+
+button {
+    padding: 12px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #f4a261;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e76f51;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .book-detail {
+        width: 80%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    textarea {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .book-detail {
+        width: 90%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="book-detail">
+        <h2>1984</h2>
+        <p><strong>Author:</strong> George Orwell</p>
+        <p><strong>Genre:</strong> Dystopian Fiction</p>
+        <p><strong>Rating:</strong> ★★★★☆</p>
+
+        <!-- Book Image -->
+        <img src="https://covers.openlibrary.org/b/id/7222246-L.jpg" alt="1984 by George Orwell" style="width: 200px; height: 300px;">
+
+        <h3>Book Description</h3>
+        <p>"1984" is a dystopian novel set in a totalitarian society controlled by the Party and its leader, Big Brother. The novel explores themes of surveillance, censorship, and the loss of individuality. It follows Winston Smith, who begins to question the Party’s control over reality.</p>
+
+        <h3>Reviews</h3>
+        <div class="review">
+            <p><strong>Username:</strong> Great Read!</p>
+            <p>This book was a gripping read. The depiction of a dystopian world controlled by total surveillance felt too real, and I couldn’t stop thinking about it. The themes still resonate today.</p>
+            <p>Rating: ★★★★★</p>
+        </div>
+
+        <h3>Write a Review</h3>
+        <form action="#">
+            <textarea placeholder="Write your review here..."></textarea><br>
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating">
+                <option value="1">★</option>
+                <option value="2">★★</option>
+                <option value="3">★★★</option>
+                <option value="4">★★★★</option>
+                <option value="5">★★★★★</option>
+            </select><br>
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Book Review Website</p>
+    </footer>
+</body>
+</html>
